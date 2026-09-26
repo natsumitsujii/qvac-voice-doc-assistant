@@ -1,5 +1,3 @@
 node_modules
 .qvac
-*.wav
-*.mp3
-*.m4a
+sample.wav

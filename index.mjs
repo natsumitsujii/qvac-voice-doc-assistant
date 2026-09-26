@@ -21,7 +21,7 @@ console.log("\n✅ Whisper loaded:", whisperId)
 console.log("\nLoading LLAMA 3.2 1B Instruct Q4_0 on-device...")
 const llmId = await loadModel({
   modelSrc: LLAMA_3_2_1B_INST_Q4_0,
-  modelType: "llm",
+  modelType: "llamacpp-completion",
   modelConfig: { ctx_size: 2048 },
   onProgress: (p) => process.stdout.write(`\r LLM ${p.percentage?.toFixed(0) || 0}% ${p.status||""} `)
 })
