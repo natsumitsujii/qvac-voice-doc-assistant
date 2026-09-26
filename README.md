@@ -20,6 +20,7 @@ Built for Tether's QVAC Hackathon: Build a local AI app with Tether's QVAC SDK
 ## What it does
 
 Takes any local `wav/mp3/m4a` file, runs:
+
 1. `loadModel(WHISPER_TINY)` → `transcribe()` → `unloadModel()` — on-device transcription
 2. `loadModel(LLAMA_3_2_1B_INST_Q4_0)` → `completion()` → `unloadModel()` — on-device doc generation
 
