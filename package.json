@@ -1,9 +1,16 @@
 {
   "name": "qvac-voice-doc-assistant",
   "version": "1.0.0",
-  "description": "On-device voice memo that transcribes locally and generates meeting notes - no cloud",
+  "description": "On-device voice memo app that transcribes locally and generates meeting notes - no cloud, no API key. Built with Tether QVAC SDK.",
   "type": "module",
-  "scripts": { "start": "node index.mjs" },
-  "dependencies": { "@qvac/sdk": "^0.19.0" },
-  "license": "MIT"
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "dev": "node --watch index.mjs"
+  },
+  "dependencies": {
+    "@qvac/sdk": "^0.19.0"
+  },
+  "license": "MIT",
+  "keywords": ["qvac", "on-device", "voice", "transcription", "llm", "tether"]
 }
