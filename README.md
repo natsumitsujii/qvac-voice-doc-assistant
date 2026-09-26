@@ -39,3 +39,12 @@ Requires Node.js >= 22.17
 ```bash
 npm install
 npx qvac doctor
+npm start
+# or
+node index.mjs ./sample.wav
+# or with any file
+node index.mjs /path/to/your/audio.mp3
+npx @qvac/cli bundle sdk
+# creates qvac/worker.entry.mjs, qvac/worker.bundle.js, qvac/addons.manifest.json
+Why I built it
+Private offline meetings where sensitive audio cannot be uploaded to cloud — no API key, no cloud, private by design.
