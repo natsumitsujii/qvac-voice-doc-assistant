@@ -9,7 +9,7 @@
     "dev": "node --watch index.mjs"
   },
   "dependencies": {
-    "@qvac/sdk": "^0.19.1"
+    "@qvac/sdk": "^0.20.0"
   },
   "license": "MIT",
   "keywords": [
