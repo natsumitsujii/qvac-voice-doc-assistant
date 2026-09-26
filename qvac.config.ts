@@ -1,9 +1,7 @@
-import { defineConfig } from "@qvac/sdk"
-import { PLUGIN_LLM, PLUGIN_WHISPER } from "@qvac/sdk"
+import type { QvacConfig } from "@qvac/sdk";
 
-export default defineConfig({
-  plugins: [PLUGIN_LLM, PLUGIN_WHISPER],
-  models: {
-    downloadDir: "./.qvac/models"
-  }
-})
+const config: QvacConfig = {
+  plugins: ["@qvac/plugin-llm", "@qvac/plugin-whisper"]
+};
+
+export default config;
