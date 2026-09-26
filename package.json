@@ -21,6 +21,7 @@
     "tether"
   ],
   "devDependencies": {
+    "@qvac/cli": "^0.14.0",
     "tsx": "^4.23.15"
   }
 }
