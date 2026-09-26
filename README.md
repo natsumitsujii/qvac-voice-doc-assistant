@@ -1,14 +1,23 @@
 # QVAC Voice Doc Assistant — On-Device
 
-Offline voice memo -> meeting notes. 100% on-device transcription + LLM, no API key, data never leaves machine.
+Offline voice memo app that **transcribes on-device and generates docs with no cloud upload**. Data never leaves your machine.
 
-Built with `@qvac/sdk@^0.19.0` — QVAC is Tether's open-source AI SDK.
+Built with [Tether QVAC SDK](https://github.com/tetherto/qvac) `@qvac/sdk@^0.19.0`
 
-**QVAC functions used:** `loadModel`, `transcribe`, `completion`, `unloadModel`
-- WHISPER_TINY (whispercpp-transcription)
-- LLAMA_3_2_1B_INST_Q4_0 (llm)
+### What it does
+- Takes any `wav/mp3/m4a` file
+- `loadModel` → `transcribe` (Whisper Tiny) on-device
+- `loadModel` → `completion` (Llama 3.2 1B Instruct Q4_0) on-device to generate Summary / Meeting Notes / Action Items / Email Draft
 
-**Install:**
+No API key, no usage bill, private by design.
+
+### QVAC functions used
+- `loadModel` (WHISPER_TINY, LLAMA_3_2_1B_INST_Q4_0)
+- `transcribe`
+- `completion`
+- `unloadModel`
+
+### Install
 ```bash
 npm install
-# Node >=22.17 required
+# needs Node.js >= 22.17
