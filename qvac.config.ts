@@ -1,7 +1,10 @@
 import type { QvacConfig } from "@qvac/sdk";
 
 const config: QvacConfig = {
-  plugins: ["@qvac/plugin-llm", "@qvac/plugin-whisper"]
+  plugins: [
+    "@qvac/sdk/llamacpp-completion/plugin",
+    "@qvac/sdk/whispercpp-transcription/plugin"
+  ]
 };
 
 export default config;
